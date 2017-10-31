@@ -1888,7 +1888,591 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var app = _react2.default.createElement(
 	_reactRedux.Provider,
 	{ store: _stores2.default.configure(null) },
-	_react2.default.createElement(_Intro2.default, null)
+	_react2.default.createElement(
+		'div',
+		null,
+		_react2.default.createElement(
+			'section',
+			{ id: 'sidebar' },
+			_react2.default.createElement(
+				'div',
+				{ 'class': 'inner' },
+				_react2.default.createElement(
+					'nav',
+					null,
+					_react2.default.createElement(
+						'ul',
+						null,
+						_react2.default.createElement(
+							'li',
+							null,
+							_react2.default.createElement(
+								'a',
+								{ href: '#intro' },
+								'Welcome'
+							)
+						),
+						_react2.default.createElement(
+							'li',
+							null,
+							_react2.default.createElement(
+								'a',
+								{ href: '#one' },
+								'Who we are'
+							)
+						),
+						_react2.default.createElement(
+							'li',
+							null,
+							_react2.default.createElement(
+								'a',
+								{ href: '#two' },
+								'What we do'
+							)
+						),
+						_react2.default.createElement(
+							'li',
+							null,
+							_react2.default.createElement(
+								'a',
+								{ href: '#three' },
+								'Get in touch'
+							)
+						)
+					)
+				)
+			)
+		),
+		_react2.default.createElement(
+			'div',
+			{ id: 'wrapper' },
+			_react2.default.createElement(
+				'section',
+				{ id: 'intro', 'class': 'wrapper style1 fullscreen fade-up' },
+				_react2.default.createElement(
+					'div',
+					{ 'class': 'inner' },
+					_react2.default.createElement(
+						'h1',
+						null,
+						'Hyperspace'
+					),
+					_react2.default.createElement(
+						'p',
+						null,
+						'Just another fine responsive site template designed by ',
+						_react2.default.createElement(
+							'a',
+							{ href: 'http://html5up.net' },
+							'HTML5 UP'
+						),
+						_react2.default.createElement('br', null),
+						'and released for free under the ',
+						_react2.default.createElement(
+							'a',
+							{ href: 'http://html5up.net/license' },
+							'Creative Commons'
+						),
+						'.'
+					),
+					_react2.default.createElement(
+						'ul',
+						{ 'class': 'actions' },
+						_react2.default.createElement(
+							'li',
+							null,
+							_react2.default.createElement(
+								'a',
+								{ href: '#one', 'class': 'button scrolly' },
+								'Learn more'
+							)
+						)
+					)
+				)
+			),
+			_react2.default.createElement(
+				'section',
+				{ id: 'one', 'class': 'wrapper style2 spotlights' },
+				_react2.default.createElement(
+					'section',
+					null,
+					_react2.default.createElement(
+						'a',
+						{ href: '#', 'class': 'image' },
+						_react2.default.createElement('img', { src: '/images/pic01.jpg', alt: '', 'data-position': 'center center' })
+					),
+					_react2.default.createElement(
+						'div',
+						{ 'class': 'content' },
+						_react2.default.createElement(
+							'div',
+							{ 'class': 'inner' },
+							_react2.default.createElement(
+								'h2',
+								null,
+								'Sed ipsum dolor'
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.'
+							),
+							_react2.default.createElement(
+								'ul',
+								{ 'class': 'actions' },
+								_react2.default.createElement(
+									'li',
+									null,
+									_react2.default.createElement(
+										'a',
+										{ href: '#', 'class': 'button' },
+										'Learn more'
+									)
+								)
+							)
+						)
+					)
+				),
+				_react2.default.createElement(
+					'section',
+					null,
+					_react2.default.createElement(
+						'a',
+						{ href: '#', 'class': 'image' },
+						_react2.default.createElement('img', { src: '/images/pic02.jpg', alt: '', 'data-position': 'top center' })
+					),
+					_react2.default.createElement(
+						'div',
+						{ 'class': 'content' },
+						_react2.default.createElement(
+							'div',
+							{ 'class': 'inner' },
+							_react2.default.createElement(
+								'h2',
+								null,
+								'Feugiat consequat'
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.'
+							),
+							_react2.default.createElement(
+								'ul',
+								{ 'class': 'actions' },
+								_react2.default.createElement(
+									'li',
+									null,
+									_react2.default.createElement(
+										'a',
+										{ href: '#', 'class': 'button' },
+										'Learn more'
+									)
+								)
+							)
+						)
+					)
+				),
+				_react2.default.createElement(
+					'section',
+					null,
+					_react2.default.createElement(
+						'a',
+						{ href: '#', 'class': 'image' },
+						_react2.default.createElement('img', { src: '/images/pic03.jpg', alt: '', 'data-position': '25% 25%' })
+					),
+					_react2.default.createElement(
+						'div',
+						{ 'class': 'content' },
+						_react2.default.createElement(
+							'div',
+							{ 'class': 'inner' },
+							_react2.default.createElement(
+								'h2',
+								null,
+								'Ultricies aliquam'
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.'
+							),
+							_react2.default.createElement(
+								'ul',
+								{ 'class': 'actions' },
+								_react2.default.createElement(
+									'li',
+									null,
+									_react2.default.createElement(
+										'a',
+										{ href: '#', 'class': 'button' },
+										'Learn more'
+									)
+								)
+							)
+						)
+					)
+				)
+			),
+			_react2.default.createElement(
+				'section',
+				{ id: 'two', 'class': 'wrapper style3 fade-up' },
+				_react2.default.createElement(
+					'div',
+					{ 'class': 'inner' },
+					_react2.default.createElement(
+						'h2',
+						null,
+						'What we do'
+					),
+					_react2.default.createElement(
+						'p',
+						null,
+						'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.'
+					),
+					_react2.default.createElement(
+						'div',
+						{ 'class': 'features' },
+						_react2.default.createElement(
+							'section',
+							null,
+							_react2.default.createElement('span', { 'class': 'icon major fa-code' }),
+							_react2.default.createElement(
+								'h3',
+								null,
+								'Lorem ipsum amet'
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								'Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.'
+							)
+						),
+						_react2.default.createElement(
+							'section',
+							null,
+							_react2.default.createElement('span', { 'class': 'icon major fa-lock' }),
+							_react2.default.createElement(
+								'h3',
+								null,
+								'Aliquam sed nullam'
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								'Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.'
+							)
+						),
+						_react2.default.createElement(
+							'section',
+							null,
+							_react2.default.createElement('span', { 'class': 'icon major fa-cog' }),
+							_react2.default.createElement(
+								'h3',
+								null,
+								'Sed erat ullam corper'
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								'Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.'
+							)
+						),
+						_react2.default.createElement(
+							'section',
+							null,
+							_react2.default.createElement('span', { 'class': 'icon major fa-desktop' }),
+							_react2.default.createElement(
+								'h3',
+								null,
+								'Veroeros quis lorem'
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								'Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.'
+							)
+						),
+						_react2.default.createElement(
+							'section',
+							null,
+							_react2.default.createElement('span', { 'class': 'icon major fa-chain' }),
+							_react2.default.createElement(
+								'h3',
+								null,
+								'Urna quis bibendum'
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								'Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.'
+							)
+						),
+						_react2.default.createElement(
+							'section',
+							null,
+							_react2.default.createElement('span', { 'class': 'icon major fa-diamond' }),
+							_react2.default.createElement(
+								'h3',
+								null,
+								'Aliquam urna dapibus'
+							),
+							_react2.default.createElement(
+								'p',
+								null,
+								'Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.'
+							)
+						)
+					),
+					_react2.default.createElement(
+						'ul',
+						{ 'class': 'actions' },
+						_react2.default.createElement(
+							'li',
+							null,
+							_react2.default.createElement(
+								'a',
+								{ href: '#', 'class': 'button' },
+								'Learn more'
+							)
+						)
+					)
+				)
+			),
+			_react2.default.createElement(
+				'section',
+				{ id: 'three', 'class': 'wrapper style1 fade-up' },
+				_react2.default.createElement(
+					'div',
+					{ 'class': 'inner' },
+					_react2.default.createElement(
+						'h2',
+						null,
+						'Get in touch'
+					),
+					_react2.default.createElement(
+						'p',
+						null,
+						'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.'
+					),
+					_react2.default.createElement(
+						'div',
+						{ 'class': 'split style1' },
+						_react2.default.createElement(
+							'section',
+							null,
+							_react2.default.createElement(
+								'form',
+								{ method: 'post', action: '#' },
+								_react2.default.createElement(
+									'div',
+									{ 'class': 'field half first' },
+									_react2.default.createElement(
+										'label',
+										{ 'for': 'name' },
+										'Name'
+									),
+									_react2.default.createElement('input', { type: 'text', name: 'name', id: 'name' })
+								),
+								_react2.default.createElement(
+									'div',
+									{ 'class': 'field half' },
+									_react2.default.createElement(
+										'label',
+										{ 'for': 'email' },
+										'Email'
+									),
+									_react2.default.createElement('input', { type: 'text', name: 'email', id: 'email' })
+								),
+								_react2.default.createElement(
+									'div',
+									{ 'class': 'field' },
+									_react2.default.createElement(
+										'label',
+										{ 'for': 'message' },
+										'Message'
+									),
+									_react2.default.createElement('textarea', { name: 'message', id: 'message', rows: '5' })
+								),
+								_react2.default.createElement(
+									'ul',
+									{ 'class': 'actions' },
+									_react2.default.createElement(
+										'li',
+										null,
+										_react2.default.createElement(
+											'a',
+											{ href: '', 'class': 'button submit' },
+											'Send Message'
+										)
+									)
+								)
+							)
+						),
+						_react2.default.createElement(
+							'section',
+							null,
+							_react2.default.createElement(
+								'ul',
+								{ 'class': 'contact' },
+								_react2.default.createElement(
+									'li',
+									null,
+									_react2.default.createElement(
+										'h3',
+										null,
+										'Address'
+									),
+									_react2.default.createElement(
+										'span',
+										null,
+										'12345 Somewhere Road #654',
+										_react2.default.createElement('br', null),
+										'Nashville, TN 00000-0000',
+										_react2.default.createElement('br', null),
+										'USA'
+									)
+								),
+								_react2.default.createElement(
+									'li',
+									null,
+									_react2.default.createElement(
+										'h3',
+										null,
+										'Email'
+									),
+									_react2.default.createElement(
+										'a',
+										{ href: '#' },
+										'user@untitled.tld'
+									)
+								),
+								_react2.default.createElement(
+									'li',
+									null,
+									_react2.default.createElement(
+										'h3',
+										null,
+										'Phone'
+									),
+									_react2.default.createElement(
+										'span',
+										null,
+										'(000) 000-0000'
+									)
+								),
+								_react2.default.createElement(
+									'li',
+									null,
+									_react2.default.createElement(
+										'h3',
+										null,
+										'Social'
+									),
+									_react2.default.createElement(
+										'ul',
+										{ 'class': 'icons' },
+										_react2.default.createElement(
+											'li',
+											null,
+											_react2.default.createElement(
+												'a',
+												{ href: '#', 'class': 'fa-twitter' },
+												_react2.default.createElement(
+													'span',
+													{ 'class': 'label' },
+													'Twitter'
+												)
+											)
+										),
+										_react2.default.createElement(
+											'li',
+											null,
+											_react2.default.createElement(
+												'a',
+												{ href: '#', 'class': 'fa-facebook' },
+												_react2.default.createElement(
+													'span',
+													{ 'class': 'label' },
+													'Facebook'
+												)
+											)
+										),
+										_react2.default.createElement(
+											'li',
+											null,
+											_react2.default.createElement(
+												'a',
+												{ href: '#', 'class': 'fa-github' },
+												_react2.default.createElement(
+													'span',
+													{ 'class': 'label' },
+													'GitHub'
+												)
+											)
+										),
+										_react2.default.createElement(
+											'li',
+											null,
+											_react2.default.createElement(
+												'a',
+												{ href: '#', 'class': 'fa-instagram' },
+												_react2.default.createElement(
+													'span',
+													{ 'class': 'label' },
+													'Instagram'
+												)
+											)
+										),
+										_react2.default.createElement(
+											'li',
+											null,
+											_react2.default.createElement(
+												'a',
+												{ href: '#', 'class': 'fa-linkedin' },
+												_react2.default.createElement(
+													'span',
+													{ 'class': 'label' },
+													'LinkedIn'
+												)
+											)
+										)
+									)
+								)
+							)
+						)
+					)
+				)
+			)
+		),
+		_react2.default.createElement(
+			'footer',
+			{ id: 'footer', 'class': 'wrapper style1-alt' },
+			_react2.default.createElement(
+				'div',
+				{ 'class': 'inner' },
+				_react2.default.createElement(
+					'ul',
+					{ 'class': 'menu' },
+					_react2.default.createElement(
+						'li',
+						null,
+						'\xA9 Untitled. All rights reserved.'
+					),
+					_react2.default.createElement(
+						'li',
+						null,
+						'Design: ',
+						_react2.default.createElement(
+							'a',
+							{ href: 'http://html5up.net' },
+							'HTML5 UP'
+						)
+					)
+				)
+			)
+		)
+	)
 );
 
 _reactDom2.default.render(app, document.getElementById('root'));
