@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import store from './stores'
 import { Provider } from 'react-redux'
 import Intro from './components/Intro'
+import { Sidebar } from './components/presentation'
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * *
 	This is the entry point of the React app with Redux
@@ -17,66 +18,55 @@ const app = (
 	<Provider store={store.configure(null)}>
 		<div>
 
-		<section id="sidebar">
-			<div class="inner">
-				<nav>
-					<ul>
-						<li><a href="#intro">Welcome</a></li>
-						<li><a href="#one">Who we are</a></li>
-						<li><a href="#two">What we do</a></li>
-						<li><a href="#three">Get in touch</a></li>
-					</ul>
-				</nav>
-			</div>
-		</section>
+		<Sidebar />
 
 		<div id="wrapper">
 
-			<section id="intro" class="wrapper style1 fullscreen fade-up">
-				<div class="inner">
+			<section id="intro" className="wrapper style1 fullscreen fade-up">
+				<div className="inner">
 					<h1>Hyperspace</h1>
 					<p>Just another fine responsive site template designed by <a href="http://html5up.net">HTML5 UP</a><br />
 					and released for free under the <a href="http://html5up.net/license">Creative Commons</a>.</p>
-					<ul class="actions">
-						<li><a href="#one" class="button scrolly">Learn more</a></li>
+					<ul className="actions">
+						<li><a href="#one" className="button scrolly">Learn more</a></li>
 					</ul>
 				</div>
 			</section>
 
 			
-			<section id="one" class="wrapper style2 spotlights">
+			<section id="one" className="wrapper style2 spotlights">
 				<section>
-					<a href="#" class="image"><img src="/images/pic01.jpg" alt="" data-position="center center" /></a>
-					<div class="content">
-						<div class="inner">
+					<a href="#" className="image"><img src="/images/pic01.jpg" alt="" data-position="center center" /></a>
+					<div className="content">
+						<div className="inner">
 							<h2>Sed ipsum dolor</h2>
 							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-							<ul class="actions">
-								<li><a href="#" class="button">Learn more</a></li>
+							<ul className="actions">
+								<li><a href="#" className="button">Learn more</a></li>
 							</ul>
 						</div>
 					</div>
 				</section>
 				<section>
-					<a href="#" class="image"><img src="/images/pic02.jpg" alt="" data-position="top center" /></a>
-					<div class="content">
-						<div class="inner">
+					<a href="#" className="image"><img src="/images/pic02.jpg" alt="" data-position="top center" /></a>
+					<div className="content">
+						<div className="inner">
 							<h2>Feugiat consequat</h2>
 							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-							<ul class="actions">
-								<li><a href="#" class="button">Learn more</a></li>
+							<ul className="actions">
+								<li><a href="#" className="button">Learn more</a></li>
 							</ul>
 						</div>
 					</div>
 				</section>
 				<section>
-					<a href="#" class="image"><img src="/images/pic03.jpg" alt="" data-position="25% 25%" /></a>
-					<div class="content">
-						<div class="inner">
+					<a href="#" className="image"><img src="/images/pic03.jpg" alt="" data-position="25% 25%" /></a>
+					<div className="content">
+						<div className="inner">
 							<h2>Ultricies aliquam</h2>
 							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-							<ul class="actions">
-								<li><a href="#" class="button">Learn more</a></li>
+							<ul className="actions">
+								<li><a href="#" className="button">Learn more</a></li>
 							</ul>
 						</div>
 					</div>
@@ -84,75 +74,75 @@ const app = (
 			</section>
 
 			
-			<section id="two" class="wrapper style3 fade-up">
-				<div class="inner">
+			<section id="two" className="wrapper style3 fade-up">
+				<div className="inner">
 					<h2>What we do</h2>
 					<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-					<div class="features">
+					<div className="features">
 						<section>
-							<span class="icon major fa-code"></span>
+							<span className="icon major fa-code"></span>
 							<h3>Lorem ipsum amet</h3>
 							<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
 						</section>
 						<section>
-							<span class="icon major fa-lock"></span>
+							<span className="icon major fa-lock"></span>
 							<h3>Aliquam sed nullam</h3>
 							<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
 						</section>
 						<section>
-							<span class="icon major fa-cog"></span>
+							<span className="icon major fa-cog"></span>
 							<h3>Sed erat ullam corper</h3>
 							<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
 						</section>
 						<section>
-							<span class="icon major fa-desktop"></span>
+							<span className="icon major fa-desktop"></span>
 							<h3>Veroeros quis lorem</h3>
 							<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
 						</section>
 						<section>
-							<span class="icon major fa-chain"></span>
+							<span className="icon major fa-chain"></span>
 							<h3>Urna quis bibendum</h3>
 							<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
 						</section>
 						<section>
-							<span class="icon major fa-diamond"></span>
+							<span className="icon major fa-diamond"></span>
 							<h3>Aliquam urna dapibus</h3>
 							<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
 						</section>
 					</div>
-					<ul class="actions">
-						<li><a href="#" class="button">Learn more</a></li>
+					<ul className="actions">
+						<li><a href="#" className="button">Learn more</a></li>
 					</ul>
 				</div>
 			</section>
 
 			
-			<section id="three" class="wrapper style1 fade-up">
-				<div class="inner">
+			<section id="three" className="wrapper style1 fade-up">
+				<div className="inner">
 					<h2>Get in touch</h2>
 					<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-					<div class="split style1">
+					<div className="split style1">
 						<section>
 							<form method="post" action="#">
-								<div class="field half first">
-									<label for="name">Name</label>
+								<div className="field half first">
+									<label htmlfor="name">Name</label>
 									<input type="text" name="name" id="name" />
 								</div>
-								<div class="field half">
-									<label for="email">Email</label>
+								<div className="field half">
+									<label htmlfor="email">Email</label>
 									<input type="text" name="email" id="email" />
 								</div>
-								<div class="field">
-									<label for="message">Message</label>
+								<div className="field">
+									<label htmlfor="message">Message</label>
 									<textarea name="message" id="message" rows="5"></textarea>
 								</div>
-								<ul class="actions">
-									<li><a href="" class="button submit">Send Message</a></li>
+								<ul className="actions">
+									<li><a href="" className="button submit">Send Message</a></li>
 								</ul>
 							</form>
 						</section>
 						<section>
-							<ul class="contact">
+							<ul className="contact">
 								<li>
 									<h3>Address</h3>
 									<span>12345 Somewhere Road #654<br />
@@ -169,12 +159,12 @@ const app = (
 								</li>
 								<li>
 									<h3>Social</h3>
-									<ul class="icons">
-										<li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="fa-facebook"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="fa-github"><span class="label">GitHub</span></a></li>
-										<li><a href="#" class="fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<ul className="icons">
+										<li><a href="#" className="fa-twitter"><span className="label">Twitter</span></a></li>
+										<li><a href="#" className="fa-facebook"><span className="label">Facebook</span></a></li>
+										<li><a href="#" className="fa-github"><span className="label">GitHub</span></a></li>
+										<li><a href="#" className="fa-instagram"><span className="label">Instagram</span></a></li>
+										<li><a href="#" className="fa-linkedin"><span className="label">LinkedIn</span></a></li>
 									</ul>
 								</li>
 							</ul>
@@ -184,9 +174,9 @@ const app = (
 			</section>
 		</div>
 
-		<footer id="footer" class="wrapper style1-alt">
-			<div class="inner">
-				<ul class="menu">
+		<footer id="footer" className="wrapper style1-alt">
+			<div className="inner">
+				<ul className="menu">
 					<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 				</ul>
 			</div>

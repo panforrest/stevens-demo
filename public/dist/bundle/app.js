@@ -1875,6 +1875,8 @@ var _Intro = __webpack_require__(76);
 
 var _Intro2 = _interopRequireDefault(_Intro);
 
+var _presentation = __webpack_require__(77);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -1891,67 +1893,16 @@ var app = _react2.default.createElement(
 	_react2.default.createElement(
 		'div',
 		null,
-		_react2.default.createElement(
-			'section',
-			{ id: 'sidebar' },
-			_react2.default.createElement(
-				'div',
-				{ 'class': 'inner' },
-				_react2.default.createElement(
-					'nav',
-					null,
-					_react2.default.createElement(
-						'ul',
-						null,
-						_react2.default.createElement(
-							'li',
-							null,
-							_react2.default.createElement(
-								'a',
-								{ href: '#intro' },
-								'Welcome'
-							)
-						),
-						_react2.default.createElement(
-							'li',
-							null,
-							_react2.default.createElement(
-								'a',
-								{ href: '#one' },
-								'Who we are'
-							)
-						),
-						_react2.default.createElement(
-							'li',
-							null,
-							_react2.default.createElement(
-								'a',
-								{ href: '#two' },
-								'What we do'
-							)
-						),
-						_react2.default.createElement(
-							'li',
-							null,
-							_react2.default.createElement(
-								'a',
-								{ href: '#three' },
-								'Get in touch'
-							)
-						)
-					)
-				)
-			)
-		),
+		_react2.default.createElement(_presentation.Sidebar, null),
 		_react2.default.createElement(
 			'div',
 			{ id: 'wrapper' },
 			_react2.default.createElement(
 				'section',
-				{ id: 'intro', 'class': 'wrapper style1 fullscreen fade-up' },
+				{ id: 'intro', className: 'wrapper style1 fullscreen fade-up' },
 				_react2.default.createElement(
 					'div',
-					{ 'class': 'inner' },
+					{ className: 'inner' },
 					_react2.default.createElement(
 						'h1',
 						null,
@@ -1977,13 +1928,13 @@ var app = _react2.default.createElement(
 					),
 					_react2.default.createElement(
 						'ul',
-						{ 'class': 'actions' },
+						{ className: 'actions' },
 						_react2.default.createElement(
 							'li',
 							null,
 							_react2.default.createElement(
 								'a',
-								{ href: '#one', 'class': 'button scrolly' },
+								{ href: '#one', className: 'button scrolly' },
 								'Learn more'
 							)
 						)
@@ -1992,21 +1943,21 @@ var app = _react2.default.createElement(
 			),
 			_react2.default.createElement(
 				'section',
-				{ id: 'one', 'class': 'wrapper style2 spotlights' },
+				{ id: 'one', className: 'wrapper style2 spotlights' },
 				_react2.default.createElement(
 					'section',
 					null,
 					_react2.default.createElement(
 						'a',
-						{ href: '#', 'class': 'image' },
+						{ href: '#', className: 'image' },
 						_react2.default.createElement('img', { src: '/images/pic01.jpg', alt: '', 'data-position': 'center center' })
 					),
 					_react2.default.createElement(
 						'div',
-						{ 'class': 'content' },
+						{ className: 'content' },
 						_react2.default.createElement(
 							'div',
-							{ 'class': 'inner' },
+							{ className: 'inner' },
 							_react2.default.createElement(
 								'h2',
 								null,
@@ -2019,13 +1970,13 @@ var app = _react2.default.createElement(
 							),
 							_react2.default.createElement(
 								'ul',
-								{ 'class': 'actions' },
+								{ className: 'actions' },
 								_react2.default.createElement(
 									'li',
 									null,
 									_react2.default.createElement(
 										'a',
-										{ href: '#', 'class': 'button' },
+										{ href: '#', className: 'button' },
 										'Learn more'
 									)
 								)
@@ -2038,15 +1989,15 @@ var app = _react2.default.createElement(
 					null,
 					_react2.default.createElement(
 						'a',
-						{ href: '#', 'class': 'image' },
+						{ href: '#', className: 'image' },
 						_react2.default.createElement('img', { src: '/images/pic02.jpg', alt: '', 'data-position': 'top center' })
 					),
 					_react2.default.createElement(
 						'div',
-						{ 'class': 'content' },
+						{ className: 'content' },
 						_react2.default.createElement(
 							'div',
-							{ 'class': 'inner' },
+							{ className: 'inner' },
 							_react2.default.createElement(
 								'h2',
 								null,
@@ -2059,13 +2010,13 @@ var app = _react2.default.createElement(
 							),
 							_react2.default.createElement(
 								'ul',
-								{ 'class': 'actions' },
+								{ className: 'actions' },
 								_react2.default.createElement(
 									'li',
 									null,
 									_react2.default.createElement(
 										'a',
-										{ href: '#', 'class': 'button' },
+										{ href: '#', className: 'button' },
 										'Learn more'
 									)
 								)
@@ -2078,15 +2029,15 @@ var app = _react2.default.createElement(
 					null,
 					_react2.default.createElement(
 						'a',
-						{ href: '#', 'class': 'image' },
+						{ href: '#', className: 'image' },
 						_react2.default.createElement('img', { src: '/images/pic03.jpg', alt: '', 'data-position': '25% 25%' })
 					),
 					_react2.default.createElement(
 						'div',
-						{ 'class': 'content' },
+						{ className: 'content' },
 						_react2.default.createElement(
 							'div',
-							{ 'class': 'inner' },
+							{ className: 'inner' },
 							_react2.default.createElement(
 								'h2',
 								null,
@@ -2099,13 +2050,13 @@ var app = _react2.default.createElement(
 							),
 							_react2.default.createElement(
 								'ul',
-								{ 'class': 'actions' },
+								{ className: 'actions' },
 								_react2.default.createElement(
 									'li',
 									null,
 									_react2.default.createElement(
 										'a',
-										{ href: '#', 'class': 'button' },
+										{ href: '#', className: 'button' },
 										'Learn more'
 									)
 								)
@@ -2116,10 +2067,10 @@ var app = _react2.default.createElement(
 			),
 			_react2.default.createElement(
 				'section',
-				{ id: 'two', 'class': 'wrapper style3 fade-up' },
+				{ id: 'two', className: 'wrapper style3 fade-up' },
 				_react2.default.createElement(
 					'div',
-					{ 'class': 'inner' },
+					{ className: 'inner' },
 					_react2.default.createElement(
 						'h2',
 						null,
@@ -2132,11 +2083,11 @@ var app = _react2.default.createElement(
 					),
 					_react2.default.createElement(
 						'div',
-						{ 'class': 'features' },
+						{ className: 'features' },
 						_react2.default.createElement(
 							'section',
 							null,
-							_react2.default.createElement('span', { 'class': 'icon major fa-code' }),
+							_react2.default.createElement('span', { className: 'icon major fa-code' }),
 							_react2.default.createElement(
 								'h3',
 								null,
@@ -2151,7 +2102,7 @@ var app = _react2.default.createElement(
 						_react2.default.createElement(
 							'section',
 							null,
-							_react2.default.createElement('span', { 'class': 'icon major fa-lock' }),
+							_react2.default.createElement('span', { className: 'icon major fa-lock' }),
 							_react2.default.createElement(
 								'h3',
 								null,
@@ -2166,7 +2117,7 @@ var app = _react2.default.createElement(
 						_react2.default.createElement(
 							'section',
 							null,
-							_react2.default.createElement('span', { 'class': 'icon major fa-cog' }),
+							_react2.default.createElement('span', { className: 'icon major fa-cog' }),
 							_react2.default.createElement(
 								'h3',
 								null,
@@ -2181,7 +2132,7 @@ var app = _react2.default.createElement(
 						_react2.default.createElement(
 							'section',
 							null,
-							_react2.default.createElement('span', { 'class': 'icon major fa-desktop' }),
+							_react2.default.createElement('span', { className: 'icon major fa-desktop' }),
 							_react2.default.createElement(
 								'h3',
 								null,
@@ -2196,7 +2147,7 @@ var app = _react2.default.createElement(
 						_react2.default.createElement(
 							'section',
 							null,
-							_react2.default.createElement('span', { 'class': 'icon major fa-chain' }),
+							_react2.default.createElement('span', { className: 'icon major fa-chain' }),
 							_react2.default.createElement(
 								'h3',
 								null,
@@ -2211,7 +2162,7 @@ var app = _react2.default.createElement(
 						_react2.default.createElement(
 							'section',
 							null,
-							_react2.default.createElement('span', { 'class': 'icon major fa-diamond' }),
+							_react2.default.createElement('span', { className: 'icon major fa-diamond' }),
 							_react2.default.createElement(
 								'h3',
 								null,
@@ -2226,13 +2177,13 @@ var app = _react2.default.createElement(
 					),
 					_react2.default.createElement(
 						'ul',
-						{ 'class': 'actions' },
+						{ className: 'actions' },
 						_react2.default.createElement(
 							'li',
 							null,
 							_react2.default.createElement(
 								'a',
-								{ href: '#', 'class': 'button' },
+								{ href: '#', className: 'button' },
 								'Learn more'
 							)
 						)
@@ -2241,10 +2192,10 @@ var app = _react2.default.createElement(
 			),
 			_react2.default.createElement(
 				'section',
-				{ id: 'three', 'class': 'wrapper style1 fade-up' },
+				{ id: 'three', className: 'wrapper style1 fade-up' },
 				_react2.default.createElement(
 					'div',
-					{ 'class': 'inner' },
+					{ className: 'inner' },
 					_react2.default.createElement(
 						'h2',
 						null,
@@ -2257,7 +2208,7 @@ var app = _react2.default.createElement(
 					),
 					_react2.default.createElement(
 						'div',
-						{ 'class': 'split style1' },
+						{ className: 'split style1' },
 						_react2.default.createElement(
 							'section',
 							null,
@@ -2266,43 +2217,43 @@ var app = _react2.default.createElement(
 								{ method: 'post', action: '#' },
 								_react2.default.createElement(
 									'div',
-									{ 'class': 'field half first' },
+									{ className: 'field half first' },
 									_react2.default.createElement(
 										'label',
-										{ 'for': 'name' },
+										{ htmlfor: 'name' },
 										'Name'
 									),
 									_react2.default.createElement('input', { type: 'text', name: 'name', id: 'name' })
 								),
 								_react2.default.createElement(
 									'div',
-									{ 'class': 'field half' },
+									{ className: 'field half' },
 									_react2.default.createElement(
 										'label',
-										{ 'for': 'email' },
+										{ htmlfor: 'email' },
 										'Email'
 									),
 									_react2.default.createElement('input', { type: 'text', name: 'email', id: 'email' })
 								),
 								_react2.default.createElement(
 									'div',
-									{ 'class': 'field' },
+									{ className: 'field' },
 									_react2.default.createElement(
 										'label',
-										{ 'for': 'message' },
+										{ htmlfor: 'message' },
 										'Message'
 									),
 									_react2.default.createElement('textarea', { name: 'message', id: 'message', rows: '5' })
 								),
 								_react2.default.createElement(
 									'ul',
-									{ 'class': 'actions' },
+									{ className: 'actions' },
 									_react2.default.createElement(
 										'li',
 										null,
 										_react2.default.createElement(
 											'a',
-											{ href: '', 'class': 'button submit' },
+											{ href: '', className: 'button submit' },
 											'Send Message'
 										)
 									)
@@ -2314,7 +2265,7 @@ var app = _react2.default.createElement(
 							null,
 							_react2.default.createElement(
 								'ul',
-								{ 'class': 'contact' },
+								{ className: 'contact' },
 								_react2.default.createElement(
 									'li',
 									null,
@@ -2371,16 +2322,16 @@ var app = _react2.default.createElement(
 									),
 									_react2.default.createElement(
 										'ul',
-										{ 'class': 'icons' },
+										{ className: 'icons' },
 										_react2.default.createElement(
 											'li',
 											null,
 											_react2.default.createElement(
 												'a',
-												{ href: '#', 'class': 'fa-twitter' },
+												{ href: '#', className: 'fa-twitter' },
 												_react2.default.createElement(
 													'span',
-													{ 'class': 'label' },
+													{ className: 'label' },
 													'Twitter'
 												)
 											)
@@ -2390,10 +2341,10 @@ var app = _react2.default.createElement(
 											null,
 											_react2.default.createElement(
 												'a',
-												{ href: '#', 'class': 'fa-facebook' },
+												{ href: '#', className: 'fa-facebook' },
 												_react2.default.createElement(
 													'span',
-													{ 'class': 'label' },
+													{ className: 'label' },
 													'Facebook'
 												)
 											)
@@ -2403,10 +2354,10 @@ var app = _react2.default.createElement(
 											null,
 											_react2.default.createElement(
 												'a',
-												{ href: '#', 'class': 'fa-github' },
+												{ href: '#', className: 'fa-github' },
 												_react2.default.createElement(
 													'span',
-													{ 'class': 'label' },
+													{ className: 'label' },
 													'GitHub'
 												)
 											)
@@ -2416,10 +2367,10 @@ var app = _react2.default.createElement(
 											null,
 											_react2.default.createElement(
 												'a',
-												{ href: '#', 'class': 'fa-instagram' },
+												{ href: '#', className: 'fa-instagram' },
 												_react2.default.createElement(
 													'span',
-													{ 'class': 'label' },
+													{ className: 'label' },
 													'Instagram'
 												)
 											)
@@ -2429,10 +2380,10 @@ var app = _react2.default.createElement(
 											null,
 											_react2.default.createElement(
 												'a',
-												{ href: '#', 'class': 'fa-linkedin' },
+												{ href: '#', className: 'fa-linkedin' },
 												_react2.default.createElement(
 													'span',
-													{ 'class': 'label' },
+													{ className: 'label' },
 													'LinkedIn'
 												)
 											)
@@ -2447,13 +2398,13 @@ var app = _react2.default.createElement(
 		),
 		_react2.default.createElement(
 			'footer',
-			{ id: 'footer', 'class': 'wrapper style1-alt' },
+			{ id: 'footer', className: 'wrapper style1-alt' },
 			_react2.default.createElement(
 				'div',
-				{ 'class': 'inner' },
+				{ className: 'inner' },
 				_react2.default.createElement(
 					'ul',
-					{ 'class': 'menu' },
+					{ className: 'menu' },
 					_react2.default.createElement(
 						'li',
 						null,
@@ -24356,6 +24307,123 @@ var localStyle = {
 		color: '#fff'
 	}
 };
+
+/***/ }),
+/* 77 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Sidebar = undefined;
+
+var _Sidebar = __webpack_require__(78);
+
+var _Sidebar2 = _interopRequireDefault(_Sidebar);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.Sidebar = _Sidebar2.default;
+
+/***/ }),
+/* 78 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(3);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Sidebar = function (_Component) {
+	_inherits(Sidebar, _Component);
+
+	function Sidebar() {
+		_classCallCheck(this, Sidebar);
+
+		return _possibleConstructorReturn(this, (Sidebar.__proto__ || Object.getPrototypeOf(Sidebar)).apply(this, arguments));
+	}
+
+	_createClass(Sidebar, [{
+		key: "render",
+		value: function render() {
+			return _react2.default.createElement(
+				"section",
+				{ id: "sidebar" },
+				_react2.default.createElement(
+					"div",
+					{ className: "inner" },
+					_react2.default.createElement(
+						"nav",
+						null,
+						_react2.default.createElement(
+							"ul",
+							null,
+							_react2.default.createElement(
+								"li",
+								null,
+								_react2.default.createElement(
+									"a",
+									{ href: "#intro" },
+									"Welcome"
+								)
+							),
+							_react2.default.createElement(
+								"li",
+								null,
+								_react2.default.createElement(
+									"a",
+									{ href: "#one" },
+									"Who we are"
+								)
+							),
+							_react2.default.createElement(
+								"li",
+								null,
+								_react2.default.createElement(
+									"a",
+									{ href: "#two" },
+									"What we do"
+								)
+							),
+							_react2.default.createElement(
+								"li",
+								null,
+								_react2.default.createElement(
+									"a",
+									{ href: "#three" },
+									"Get in touch"
+								)
+							)
+						)
+					)
+				)
+			);
+		}
+	}]);
+
+	return Sidebar;
+}(_react.Component);
+
+exports.default = Sidebar;
 
 /***/ })
 ],[28]);
