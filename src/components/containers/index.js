@@ -6,9 +6,10 @@
 */
 
 import Users from './Users'
+import Register from './Register'
 
 export {
 
-	Users
+	Register
 	
 }
