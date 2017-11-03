@@ -32536,210 +32536,248 @@ var Register = function (_Component) {
 	function Register() {
 		_classCallCheck(this, Register);
 
-		return _possibleConstructorReturn(this, (Register.__proto__ || Object.getPrototypeOf(Register)).apply(this, arguments));
+		var _this = _possibleConstructorReturn(this, (Register.__proto__ || Object.getPrototypeOf(Register)).call(this));
+
+		_this.state = {
+			name: '',
+			email: '',
+			message: ''
+		};
+		return _this;
 	}
 
 	_createClass(Register, [{
-		key: "render",
+		key: 'updateVisitor',
+		value: function updateVisitor(field, event) {
+			console.log(field + " == " + event.target.value);
+			// const visitor = Object.assign({}, this.state)
+			// visitor[event.target.id] = event.target.value
+
+			if (field == 'name') {
+				this.setState({
+					name: event.target.value
+				});
+			}
+
+			if (field == 'email') {
+				this.setState({
+					email: event.target.value
+				});
+			}
+
+			if (field == 'message') {
+				this.setState({
+					message: event.target.value
+				});
+			}
+		}
+	}, {
+		key: 'sendMessage',
+		value: function sendMessage(event) {
+			event.preventDefault();
+			console.log('sendMessage: ' + JSON.stringify(this.state));
+		}
+	}, {
+		key: 'render',
 		value: function render() {
 			return _react2.default.createElement(
-				"div",
-				{ id: "wrapper" },
+				'div',
+				{ id: 'wrapper' },
 				_react2.default.createElement(
-					"section",
-					{ id: "three", className: "wrapper style1 fade-up" },
+					'section',
+					{ id: 'three', className: 'wrapper style1 fade-up' },
 					_react2.default.createElement(
-						"div",
-						{ className: "inner" },
+						'div',
+						{ className: 'inner' },
 						_react2.default.createElement(
-							"h2",
+							'h2',
 							null,
-							"Get in touch"
+							'Get in touch'
 						),
 						_react2.default.createElement(
-							"p",
+							'p',
 							null,
-							"Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem."
+							'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.'
 						),
 						_react2.default.createElement(
-							"div",
-							{ className: "split style1" },
+							'div',
+							{ className: 'split style1' },
 							_react2.default.createElement(
-								"section",
+								'section',
 								null,
 								_react2.default.createElement(
-									"form",
-									{ method: "post", action: "#" },
+									'form',
+									{ method: 'post', action: '#' },
 									_react2.default.createElement(
-										"div",
-										{ className: "field half first" },
+										'div',
+										{ className: 'field half first' },
 										_react2.default.createElement(
-											"label",
-											{ htmlfor: "name" },
-											"Name"
+											'label',
+											{ htmlfor: 'name' },
+											'Name'
 										),
-										_react2.default.createElement("input", { type: "text", name: "name", id: "name" })
+										_react2.default.createElement('input', { onChange: this.updateVisitor.bind(this, 'name'), type: 'text', name: 'name', id: 'name' })
 									),
 									_react2.default.createElement(
-										"div",
-										{ className: "field half" },
+										'div',
+										{ className: 'field half' },
 										_react2.default.createElement(
-											"label",
-											{ htmlfor: "email" },
-											"Email"
+											'label',
+											{ htmlfor: 'email' },
+											'Email'
 										),
-										_react2.default.createElement("input", { type: "text", name: "email", id: "email" })
+										_react2.default.createElement('input', { onChange: this.updateVisitor.bind(this, 'email'), type: 'text', name: 'email', id: 'email' })
 									),
 									_react2.default.createElement(
-										"div",
-										{ className: "field" },
+										'div',
+										{ className: 'field' },
 										_react2.default.createElement(
-											"label",
-											{ htmlfor: "message" },
-											"Message"
+											'label',
+											{ htmlfor: 'message' },
+											'Message'
 										),
-										_react2.default.createElement("textarea", { name: "message", id: "message", rows: "5" })
+										_react2.default.createElement('textarea', { onChange: this.updateVisitor.bind(this, 'message'), name: 'message', id: 'message', rows: '5' })
 									),
 									_react2.default.createElement(
-										"ul",
-										{ className: "actions" },
+										'ul',
+										{ className: 'actions' },
 										_react2.default.createElement(
-											"li",
+											'li',
 											null,
 											_react2.default.createElement(
-												"a",
-												{ href: "", className: "button submit" },
-												"Send Message"
+												'a',
+												{ onClick: this.sendMessage.bind(this), href: '#', className: 'button submit' },
+												'Send Message'
 											)
 										)
 									)
 								)
 							),
 							_react2.default.createElement(
-								"section",
+								'section',
 								null,
 								_react2.default.createElement(
-									"ul",
-									{ className: "contact" },
+									'ul',
+									{ className: 'contact' },
 									_react2.default.createElement(
-										"li",
+										'li',
 										null,
 										_react2.default.createElement(
-											"h3",
+											'h3',
 											null,
-											"Address"
+											'Address'
 										),
 										_react2.default.createElement(
-											"span",
+											'span',
 											null,
-											"12345 Somewhere Road #654",
-											_react2.default.createElement("br", null),
-											"Nashville, TN 00000-0000",
-											_react2.default.createElement("br", null),
-											"USA"
+											'12345 Somewhere Road #654',
+											_react2.default.createElement('br', null),
+											'Nashville, TN 00000-0000',
+											_react2.default.createElement('br', null),
+											'USA'
 										)
 									),
 									_react2.default.createElement(
-										"li",
+										'li',
 										null,
 										_react2.default.createElement(
-											"h3",
+											'h3',
 											null,
-											"Email"
+											'Email'
 										),
 										_react2.default.createElement(
-											"a",
-											{ href: "#" },
-											"user@untitled.tld"
+											'a',
+											{ href: '#' },
+											'user@untitled.tld'
 										)
 									),
 									_react2.default.createElement(
-										"li",
+										'li',
 										null,
 										_react2.default.createElement(
-											"h3",
+											'h3',
 											null,
-											"Phone"
+											'Phone'
 										),
 										_react2.default.createElement(
-											"span",
+											'span',
 											null,
-											"(000) 000-0000"
+											'(000) 000-0000'
 										)
 									),
 									_react2.default.createElement(
-										"li",
+										'li',
 										null,
 										_react2.default.createElement(
-											"h3",
+											'h3',
 											null,
-											"Social"
+											'Social'
 										),
 										_react2.default.createElement(
-											"ul",
-											{ className: "icons" },
+											'ul',
+											{ className: 'icons' },
 											_react2.default.createElement(
-												"li",
+												'li',
 												null,
 												_react2.default.createElement(
-													"a",
-													{ href: "#", className: "fa-twitter" },
+													'a',
+													{ href: '#', className: 'fa-twitter' },
 													_react2.default.createElement(
-														"span",
-														{ className: "label" },
-														"Twitter"
+														'span',
+														{ className: 'label' },
+														'Twitter'
 													)
 												)
 											),
 											_react2.default.createElement(
-												"li",
+												'li',
 												null,
 												_react2.default.createElement(
-													"a",
-													{ href: "#", className: "fa-facebook" },
+													'a',
+													{ href: '#', className: 'fa-facebook' },
 													_react2.default.createElement(
-														"span",
-														{ className: "label" },
-														"Facebook"
+														'span',
+														{ className: 'label' },
+														'Facebook'
 													)
 												)
 											),
 											_react2.default.createElement(
-												"li",
+												'li',
 												null,
 												_react2.default.createElement(
-													"a",
-													{ href: "#", className: "fa-github" },
+													'a',
+													{ href: '#', className: 'fa-github' },
 													_react2.default.createElement(
-														"span",
-														{ className: "label" },
-														"GitHub"
+														'span',
+														{ className: 'label' },
+														'GitHub'
 													)
 												)
 											),
 											_react2.default.createElement(
-												"li",
+												'li',
 												null,
 												_react2.default.createElement(
-													"a",
-													{ href: "#", className: "fa-instagram" },
+													'a',
+													{ href: '#', className: 'fa-instagram' },
 													_react2.default.createElement(
-														"span",
-														{ className: "label" },
-														"Instagram"
+														'span',
+														{ className: 'label' },
+														'Instagram'
 													)
 												)
 											),
 											_react2.default.createElement(
-												"li",
+												'li',
 												null,
 												_react2.default.createElement(
-													"a",
-													{ href: "#", className: "fa-linkedin" },
+													'a',
+													{ href: '#', className: 'fa-linkedin' },
 													_react2.default.createElement(
-														"span",
-														{ className: "label" },
-														"LinkedIn"
+														'span',
+														{ className: 'label' },
+														'LinkedIn'
 													)
 												)
 											)

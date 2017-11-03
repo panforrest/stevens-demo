@@ -1,12 +1,49 @@
 import React, { Component } from 'react'
 
 class Register extends Component {
+
+  constructor(){
+	super()
+	this.state = {
+		name: '',
+		email: '',
+		message: ''
+	}
+  }
+
+  updateVisitor(field, event){
+    console.log(field + " == " + event.target.value)
+    // const visitor = Object.assign({}, this.state)
+    // visitor[event.target.id] = event.target.value
+
+    if (field == 'name'){
+    	this.setState({
+    	    name: event.target.value
+    	})
+    } 
+
+    if (field == 'email'){
+    	this.setState({
+    	    email: event.target.value
+    	})
+    } 
+
+    if (field == 'message'){
+    	this.setState({
+    	    message: event.target.value
+    	})
+    } 
+  }
+
+  sendMessage(event){
+  	event.preventDefault()
+  	console.log('sendMessage: '+JSON.stringify(this.state))
+  }
+
   render(){
     return(
 
-        <div id="wrapper">
-
-			
+        <div id="wrapper">			
 			<section id="three" className="wrapper style1 fade-up">
 				<div className="inner">
 					<h2>Get in touch</h2>
@@ -16,18 +53,18 @@ class Register extends Component {
 							<form method="post" action="#">
 								<div className="field half first">
 									<label htmlfor="name">Name</label>
-									<input type="text" name="name" id="name" />
+									<input onChange={this.updateVisitor.bind(this, 'name')} type="text" name="name" id="name" />
 								</div>
 								<div className="field half">
 									<label htmlfor="email">Email</label>
-									<input type="text" name="email" id="email" />
+									<input onChange={this.updateVisitor.bind(this, 'email')}  type="text" name="email" id="email" />
 								</div>
 								<div className="field">
 									<label htmlfor="message">Message</label>
-									<textarea name="message" id="message" rows="5"></textarea>
+									<textarea  onChange={this.updateVisitor.bind(this, 'message')} name="message" id="message" rows="5"></textarea>
 								</div>
 								<ul className="actions">
-									<li><a href="" className="button submit">Send Message</a></li>
+									<li><a onClick={this.sendMessage.bind(this)} href="#" className="button submit">Send Message</a></li>
 								</ul>
 							</form>
 						</section>
@@ -63,7 +100,6 @@ class Register extends Component {
 				</div>
 			</section>
 		</div>
-
     )
   }
 }
