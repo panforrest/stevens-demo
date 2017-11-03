@@ -21,7 +21,7 @@
     "react-time": "latest",
     "redux": "latest",
     "redux-thunk": "latest",
-    "superagent": "latest",
+    "superagent": "^3.8.0",
     "turbo360": "latest",
     "twilio": "^3.9.1",
     "vertex360": "latest"

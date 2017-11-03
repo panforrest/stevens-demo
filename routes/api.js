@@ -6,10 +6,6 @@ const twilio = require('twilio')
 
 /*  This is a sample API route. */
 router.get('/:sms', function(req, res){
-	// res.json({
-	// 	confirmation: 'success',
-	// 	message: 'this is the sms route'
-	// })
 	var accountSid = 'AC4b99f76eaaec3adff9b44c733bdc00b6' // Your Account SID from www.twilio.com/console
 	var authToken = 'abdedad29ab5a58bc45cb068386abaab' // Your Auth Token from www.twilio.com/console
 

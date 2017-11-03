@@ -32503,7 +32503,7 @@ var Promise=__webpack_require__(81),superagent=__webpack_require__(80),TURBO_VEC
 /* 104 */
 /***/ (function(module, exports) {
 
-module.exports = {"name":"stevens-demo","version":"0.0.0","server":false,"private":true,"scripts":{"clean":"rm -rf ./public/dist","build":"npm run clean && NODE_ENV=production webpack && gulp prod","postinstall":"npm run build"},"dependencies":{"bluebird":"latest","debug":"latest","dotenv":"latest","moment":"latest","react":"latest","react-bootstrap":"latest","react-dom":"latest","react-dropzone":"latest","react-redux":"latest","react-time":"latest","redux":"latest","redux-thunk":"latest","superagent":"latest","turbo360":"latest","twilio":"^3.9.1","vertex360":"latest"},"devDependencies":{"babel-core":"latest","babel-loader":"latest","babel-preset-es2015":"latest","babel-preset-react":"latest","json-loader":"latest","gulp":"latest","gulp-autoprefixer":"latest","gulp-6to5":"latest","gulp-concat":"latest","gulp-less":"latest","gulp-minify-css":"latest","gulp-rename":"latest","gulp-uglify":"latest","chai":"latest","chai-http":"latest","nodemon":"latest","mocha":"latest","mocha-jscs":"latest","mocha-jshint":"latest","rimraf":"latest","webpack":"latest"},"functions":{"turbo360":"latest"},"app":"59f8427cb03c1600128c7828","deploy":["."],"format":"vertex"}
+module.exports = {"name":"stevens-demo","version":"0.0.0","server":false,"private":true,"scripts":{"clean":"rm -rf ./public/dist","build":"npm run clean && NODE_ENV=production webpack && gulp prod","postinstall":"npm run build"},"dependencies":{"bluebird":"latest","debug":"latest","dotenv":"latest","moment":"latest","react":"latest","react-bootstrap":"latest","react-dom":"latest","react-dropzone":"latest","react-redux":"latest","react-time":"latest","redux":"latest","redux-thunk":"latest","superagent":"^3.8.0","turbo360":"latest","twilio":"^3.9.1","vertex360":"latest"},"devDependencies":{"babel-core":"latest","babel-loader":"latest","babel-preset-es2015":"latest","babel-preset-react":"latest","json-loader":"latest","gulp":"latest","gulp-autoprefixer":"latest","gulp-6to5":"latest","gulp-concat":"latest","gulp-less":"latest","gulp-minify-css":"latest","gulp-rename":"latest","gulp-uglify":"latest","chai":"latest","chai-http":"latest","nodemon":"latest","mocha":"latest","mocha-jscs":"latest","mocha-jshint":"latest","rimraf":"latest","webpack":"latest"},"functions":{"turbo360":"latest"},"app":"59f8427cb03c1600128c7828","deploy":["."],"format":"vertex"}
 
 /***/ }),
 /* 105 */
@@ -32521,6 +32521,10 @@ var _createClass = function () { function defineProperties(target, props) { for 
 var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
+
+var _superagent = __webpack_require__(80);
+
+var _superagent2 = _interopRequireDefault(_superagent);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -32576,6 +32580,16 @@ var Register = function (_Component) {
 		value: function sendMessage(event) {
 			event.preventDefault();
 			console.log('sendMessage: ' + JSON.stringify(this.state));
+			_superagent2.default.get('/api/sms').query(null).set('Accept', 'application/json').end(function (err, response) {
+				// if (err){
+				if (err) {
+					alert('Oops: ' + err.message);
+					return;
+				}
+
+				alert('Message Sent!');
+				// }
+			});
 		}
 	}, {
 		key: 'render',

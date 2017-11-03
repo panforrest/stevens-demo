@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import superagent from 'superagent'
 
 class Register extends Component {
 
@@ -38,6 +39,19 @@ class Register extends Component {
   sendMessage(event){
   	event.preventDefault()
   	console.log('sendMessage: '+JSON.stringify(this.state))
+  	superagent.get('/api/sms')
+  	.query(null)
+  	.set('Accept', 'application/json')
+  	.end((err, response) => {
+  		// if (err){
+  			if (err) {
+  				alert('Oops: ' + err.message)
+  				return
+  			}
+
+  			alert('Message Sent!')
+  		// }
+  	})
   }
 
   render(){
