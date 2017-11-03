@@ -23,6 +23,7 @@
     "redux-thunk": "latest",
     "superagent": "latest",
     "turbo360": "latest",
+    "twilio": "^3.9.1",
     "vertex360": "latest"
   },
   "devDependencies": {

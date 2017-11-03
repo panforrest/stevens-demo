@@ -2,8 +2,15 @@ const pkg_json = require('../package.json')
 const turbo = require('turbo360')({site_id:pkg_json.app})
 const vertex = require('vertex360')({site_id:pkg_json.app})
 const router = vertex.router()
+const twilio = require('twilio')
 
 /*  This is a sample API route. */
+router.get('/:sms', function(req, res){
+	res.json({
+		confirmation: 'success',
+		message: 'this is the sms route'
+	})
+})
 
 router.get('/:resource', function(req, res){
 	res.json({
